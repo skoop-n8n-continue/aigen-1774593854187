@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1920px;
+    height: 1080px;
+    background-color: #10181f; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.message {
+    font-size: 8rem;
+    color: #ffffff; /* Light text */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border-bottom: 8px solid #00b7af; /* Primary accent */
+    padding-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
